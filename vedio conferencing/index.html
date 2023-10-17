@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Conferencing</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="video-container">
+    <video id="local-video" autoplay muted></video>
+    <div id="remote-videos"></div>
+  </div>
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your message">
+    <button id="send-button">Send</button>
+  </div>
+  <button id="start-call-button">Start Call</button>
+  <button id="stop-call-button">Stop Call</button>
+  <button id="record-button">Record Video</button>
+  <a id="download-link" style="display: none;" download="video.webm">Download Video</a>
+  <script src="app.js"></script>
+</body>
+</html>
